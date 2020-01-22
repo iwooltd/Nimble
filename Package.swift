@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "Nimble", targets: ["Nimble"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/mattgallagher/CwlPreconditionTesting.git", .exact("1.2.0")),
+        .package(url: "https://github.com/iwooltd/CwlPreconditionTesting.git", .exact("1.2.1")),
     ],
     targets: [
         .target(

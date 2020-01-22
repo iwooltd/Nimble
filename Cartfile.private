@@ -1,1 +1,1 @@
-github "mattgallagher/CwlPreconditionTesting" == 1.2.0
+github "iwooltd/CwlPreconditionTesting" ~> 1.2.0

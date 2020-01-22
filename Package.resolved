@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "CwlCatchException",
-        "repositoryURL": "https://github.com/mattgallagher/CwlCatchException.git",
+        "repositoryURL": "https://github.com/iwooltd/CwlCatchException.git",
         "state": {
           "branch": null,
           "revision": "7cd2f8cacc4d22f21bc0b2309c3b18acf7957b66",
@@ -12,11 +12,11 @@
       },
       {
         "package": "CwlPreconditionTesting",
-        "repositoryURL": "https://github.com/mattgallagher/CwlPreconditionTesting.git",
+        "repositoryURL": "https://github.com/iwooltd/CwlPreconditionTesting.git",
         "state": {
           "branch": null,
-          "revision": "c228db5d2ad1b01ebc84435e823e6cca4e3db98b",
-          "version": "1.2.0"
+          "revision": "cd71a2341d5d82f6ec7df7065f72f4bae04915f1",
+          "version": "1.2.1"
         }
       }
     ]
