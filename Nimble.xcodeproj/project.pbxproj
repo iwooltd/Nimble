@@ -421,6 +421,10 @@
 		DDB4D5F119FE442800E9D9FE /* MatchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D5EF19FE442800E9D9FE /* MatchTest.swift */; };
 		DDEFAEB41A93CBE6005CA37A /* ObjCAllPassTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEFAEB31A93CBE6005CA37A /* ObjCAllPassTest.m */; };
 		DDEFAEB51A93CBE6005CA37A /* ObjCAllPassTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEFAEB31A93CBE6005CA37A /* ObjCAllPassTest.m */; };
+		F7B1335823D88FF700DB108F /* CwlPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B1335623D88FF700DB108F /* CwlPreconditionTesting.framework */; };
+		F7B1335923D88FF700DB108F /* CwlPreconditionTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7B1335623D88FF700DB108F /* CwlPreconditionTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7B1335A23D88FF700DB108F /* CwlCatchException.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B1335723D88FF700DB108F /* CwlCatchException.framework */; };
+		F7B1335B23D88FF700DB108F /* CwlCatchException.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7B1335723D88FF700DB108F /* CwlCatchException.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8A1BE2F1CB3710900031679 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A1BE2B1CB3710900031679 /* XCTestObservationCenter+Register.m */; };
 		F8A1BE301CB3710900031679 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A1BE2B1CB3710900031679 /* XCTestObservationCenter+Register.m */; };
 		F8A1BE311CB3710900031679 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A1BE2B1CB3710900031679 /* XCTestObservationCenter+Register.m */; };
@@ -491,6 +495,21 @@
 			remoteInfo = "Nimble-macOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7B1335C23D88FF700DB108F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F7B1335923D88FF700DB108F /* CwlPreconditionTesting.framework in Embed Frameworks */,
+				F7B1335B23D88FF700DB108F /* CwlCatchException.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F0648CB19639F5A001F9C46 /* ObjectWithLazyProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectWithLazyProperty.swift; sourceTree = "<group>"; };
@@ -641,6 +660,8 @@
 		DDB4D5EC19FE43C200E9D9FE /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Match.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DDB4D5EF19FE442800E9D9FE /* MatchTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTest.swift; sourceTree = "<group>"; };
 		DDEFAEB31A93CBE6005CA37A /* ObjCAllPassTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCAllPassTest.m; sourceTree = "<group>"; };
+		F7B1335623D88FF700DB108F /* CwlPreconditionTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CwlPreconditionTesting.framework; path = Carthage/Build/iOS/CwlPreconditionTesting.framework; sourceTree = "<group>"; };
+		F7B1335723D88FF700DB108F /* CwlCatchException.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CwlCatchException.framework; path = Carthage/Build/iOS/CwlCatchException.framework; sourceTree = "<group>"; };
 		F8A1BE2B1CB3710900031679 /* XCTestObservationCenter+Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestObservationCenter+Register.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -649,6 +670,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B1335823D88FF700DB108F /* CwlPreconditionTesting.framework in Frameworks */,
+				F7B1335A23D88FF700DB108F /* CwlCatchException.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +758,7 @@
 				1F1A74381940169200FFFC47 /* NimbleTests */,
 				CDFB69521F7E06E600AD8CC7 /* Carthage-Checkouts */,
 				1F1A742A1940169200FFFC47 /* Products */,
+				F7B1335523D88FF600DB108F /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -1033,6 +1057,15 @@
 			path = include;
 			sourceTree = "<group>";
 		};
+		F7B1335523D88FF600DB108F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B1335723D88FF700DB108F /* CwlCatchException.framework */,
+				F7B1335623D88FF700DB108F /* CwlPreconditionTesting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1088,6 +1121,7 @@
 				1F1A74241940169200FFFC47 /* Sources */,
 				1F1A74251940169200FFFC47 /* Frameworks */,
 				1F1A74271940169200FFFC47 /* Resources */,
+				F7B1335C23D88FF700DB108F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1929,6 +1963,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1970,6 +2005,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"PRODUCT_NAME=$(PRODUCT_NAME)/$(PRODUCT_NAME)",
