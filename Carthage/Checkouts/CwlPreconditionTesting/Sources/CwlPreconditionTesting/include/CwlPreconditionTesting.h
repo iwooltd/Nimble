@@ -29,7 +29,7 @@ FOUNDATION_EXPORT const unsigned char CwlAssertingTestingVersionString[];
 #import "CwlMachBadInstructionHandler.h"
 
 #if TARGET_OS_OSX || TARGET_OS_IOS
-	#import "CwlCatchException.h"
+	#import <CwlCatchException/CwlCatchException.h>
 #elif !TARGET_OS_TV
 	#error Unsupported platform.
 #endif

@@ -20,6 +20,9 @@
 
 #import "CwlCatchException.h"
 
+#if !SWIFT_PACKAGE
+__attribute__((visibility("hidden")))
+#endif
 NSException* __nullable catchExceptionOfKind(Class __nonnull type, void (^ __nonnull inBlock)(void)) {
 	@try {
 		inBlock();
