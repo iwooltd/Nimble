@@ -317,6 +317,12 @@
 		7B5358BE1C38479700A23FAA /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5358BD1C38479700A23FAA /* SatisfyAnyOf.swift */; };
 		7B5358BF1C38479700A23FAA /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5358BD1C38479700A23FAA /* SatisfyAnyOf.swift */; };
 		7B5358C01C38479700A23FAA /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5358BD1C38479700A23FAA /* SatisfyAnyOf.swift */; };
+		8B7DBA7F26826B2A0003CD49 /* CwlPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7DBA7D26826B2A0003CD49 /* CwlPreconditionTesting.framework */; };
+		8B7DBA8026826B2A0003CD49 /* CwlCatchException.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7DBA7E26826B2A0003CD49 /* CwlCatchException.framework */; };
+		8B7DBA8126826B310003CD49 /* CwlCatchException.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7DBA7E26826B2A0003CD49 /* CwlCatchException.framework */; };
+		8B7DBA8226826B310003CD49 /* CwlCatchException.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7DBA7E26826B2A0003CD49 /* CwlCatchException.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B7DBA8326826B310003CD49 /* CwlPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7DBA7D26826B2A0003CD49 /* CwlPreconditionTesting.framework */; };
+		8B7DBA8426826B310003CD49 /* CwlPreconditionTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7DBA7D26826B2A0003CD49 /* CwlPreconditionTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		964CFEFD1C4FF48900513336 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CFEFC1C4FF48900513336 /* ThrowAssertion.swift */; };
 		964CFEFE1C4FF48900513336 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CFEFC1C4FF48900513336 /* ThrowAssertion.swift */; };
 		964CFEFF1C4FF48900513336 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CFEFC1C4FF48900513336 /* ThrowAssertion.swift */; };
@@ -421,10 +427,6 @@
 		DDB4D5F119FE442800E9D9FE /* MatchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4D5EF19FE442800E9D9FE /* MatchTest.swift */; };
 		DDEFAEB41A93CBE6005CA37A /* ObjCAllPassTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEFAEB31A93CBE6005CA37A /* ObjCAllPassTest.m */; };
 		DDEFAEB51A93CBE6005CA37A /* ObjCAllPassTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEFAEB31A93CBE6005CA37A /* ObjCAllPassTest.m */; };
-		F7B1335823D88FF700DB108F /* CwlPreconditionTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B1335623D88FF700DB108F /* CwlPreconditionTesting.framework */; };
-		F7B1335923D88FF700DB108F /* CwlPreconditionTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7B1335623D88FF700DB108F /* CwlPreconditionTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F7B1335A23D88FF700DB108F /* CwlCatchException.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B1335723D88FF700DB108F /* CwlCatchException.framework */; };
-		F7B1335B23D88FF700DB108F /* CwlCatchException.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7B1335723D88FF700DB108F /* CwlCatchException.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8A1BE2F1CB3710900031679 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A1BE2B1CB3710900031679 /* XCTestObservationCenter+Register.m */; };
 		F8A1BE301CB3710900031679 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A1BE2B1CB3710900031679 /* XCTestObservationCenter+Register.m */; };
 		F8A1BE311CB3710900031679 /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A1BE2B1CB3710900031679 /* XCTestObservationCenter+Register.m */; };
@@ -503,8 +505,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F7B1335923D88FF700DB108F /* CwlPreconditionTesting.framework in Embed Frameworks */,
-				F7B1335B23D88FF700DB108F /* CwlCatchException.framework in Embed Frameworks */,
+				8B7DBA8426826B310003CD49 /* CwlPreconditionTesting.framework in Embed Frameworks */,
+				8B7DBA8226826B310003CD49 /* CwlCatchException.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +630,8 @@
 		7B5358B91C3846C900A23FAA /* SatisfyAnyOfTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatisfyAnyOfTest.swift; sourceTree = "<group>"; };
 		7B5358BD1C38479700A23FAA /* SatisfyAnyOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatisfyAnyOf.swift; sourceTree = "<group>"; };
 		7B5358C11C39155600A23FAA /* ObjCSatisfyAnyOfTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCSatisfyAnyOfTest.m; sourceTree = "<group>"; };
+		8B7DBA7D26826B2A0003CD49 /* CwlPreconditionTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CwlPreconditionTesting.framework; path = Carthage/Build/CwlPreconditionTesting.framework; sourceTree = "<group>"; };
+		8B7DBA7E26826B2A0003CD49 /* CwlCatchException.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CwlCatchException.framework; path = Carthage/Build/CwlCatchException.framework; sourceTree = "<group>"; };
 		8DF1C3F61C94FC75004B2D36 /* ObjcStringersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcStringersTest.m; sourceTree = "<group>"; };
 		964CFEFC1C4FF48900513336 /* ThrowAssertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrowAssertion.swift; sourceTree = "<group>"; };
 		965B0D081B62B8ED0005AE66 /* ObjCUserDescriptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCUserDescriptionTest.m; sourceTree = "<group>"; };
@@ -660,8 +664,6 @@
 		DDB4D5EC19FE43C200E9D9FE /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Match.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DDB4D5EF19FE442800E9D9FE /* MatchTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTest.swift; sourceTree = "<group>"; };
 		DDEFAEB31A93CBE6005CA37A /* ObjCAllPassTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCAllPassTest.m; sourceTree = "<group>"; };
-		F7B1335623D88FF700DB108F /* CwlPreconditionTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CwlPreconditionTesting.framework; path = Carthage/Build/iOS/CwlPreconditionTesting.framework; sourceTree = "<group>"; };
-		F7B1335723D88FF700DB108F /* CwlCatchException.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CwlCatchException.framework; path = Carthage/Build/iOS/CwlCatchException.framework; sourceTree = "<group>"; };
 		F8A1BE2B1CB3710900031679 /* XCTestObservationCenter+Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestObservationCenter+Register.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -670,8 +672,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B1335823D88FF700DB108F /* CwlPreconditionTesting.framework in Frameworks */,
-				F7B1335A23D88FF700DB108F /* CwlCatchException.framework in Frameworks */,
+				8B7DBA8326826B310003CD49 /* CwlPreconditionTesting.framework in Frameworks */,
+				8B7DBA8126826B310003CD49 /* CwlCatchException.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +704,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7DBA7F26826B2A0003CD49 /* CwlPreconditionTesting.framework in Frameworks */,
+				8B7DBA8026826B2A0003CD49 /* CwlCatchException.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1060,8 +1064,8 @@
 		F7B1335523D88FF600DB108F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7B1335723D88FF700DB108F /* CwlCatchException.framework */,
-				F7B1335623D88FF700DB108F /* CwlPreconditionTesting.framework */,
+				8B7DBA7E26826B2A0003CD49 /* CwlCatchException.framework */,
+				8B7DBA7D26826B2A0003CD49 /* CwlPreconditionTesting.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1964,7 +1968,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/",
+					"$(PROJECT_DIR)/Carthage/Build",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1974,13 +1979,13 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Sources/Nimble/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-weak_framework",
 					XCTest,
-					"-weak-lswiftXCTest",
+					"-weak-lXCTestSwiftSupport",
 					"-Xlinker",
 					"-no_application_extension",
 				);
@@ -2007,7 +2012,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/",
+					"$(PROJECT_DIR)/Carthage/Build",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"PRODUCT_NAME=$(PRODUCT_NAME)/$(PRODUCT_NAME)",
@@ -2016,13 +2022,13 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Sources/Nimble/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-weak_framework",
 					XCTest,
-					"-weak-lswiftXCTest",
+					"-weak-lXCTestSwiftSupport",
 					"-Xlinker",
 					"-no_application_extension",
 				);
@@ -2108,7 +2114,7 @@
 					"$(inherited)",
 					"-weak_framework",
 					XCTest,
-					"-weak-lswiftXCTest",
+					"-weak-lXCTestSwiftSupport",
 					"-Xlinker",
 					"-no_application_extension",
 				);
@@ -2150,7 +2156,7 @@
 					"$(inherited)",
 					"-weak_framework",
 					XCTest,
-					"-weak-lswiftXCTest",
+					"-weak-lXCTestSwiftSupport",
 					"-Xlinker",
 					"-no_application_extension",
 				);
@@ -2221,6 +2227,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2238,7 +2245,7 @@
 					"$(inherited)",
 					"-weak_framework",
 					XCTest,
-					"-weak-lswiftXCTest",
+					"-weak-lXCTestSwiftSupport",
 					"-Xlinker",
 					"-no_application_extension",
 				);
@@ -2264,6 +2271,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2280,7 +2288,7 @@
 					"$(inherited)",
 					"-weak_framework",
 					XCTest,
-					"-weak-lswiftXCTest",
+					"-weak-lXCTestSwiftSupport",
 					"-Xlinker",
 					"-no_application_extension",
 				);
